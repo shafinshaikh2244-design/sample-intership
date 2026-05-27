@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:linear-gradient(136deg,#90c6f5,#62f7ff);
+    }
+
+    form{
+      width:400px;
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 8px 20px rgba(0,0,0,1);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+      color:#ad1d1d;
+    }
+
+    label{
+      display:block;
+      margin-top:12px;
+      margin-bottom:6px;
+      font-weight:bold;
+      color:#0f0101;
+    }
+
+    input,
+    select,
+    textarea{
+      width:100%;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      outline:none;
+      font-size:15px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus{
+      border-color:#022e55;
+      box-shadow:0 0 5px rgba(3, 62, 114, 0.5);
+    }
+
+    .gender{
+      width:auto;
+      margin-right:5px;
+    }
+
+    button{
+      width:100%;
+      padding:12px;
+      margin-top:20px;
+      border:none;
+      border-radius:10px;
+      border-color: white;
+      background:#740d04;
+      color:white;
+      font-size:16px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#008cdd;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <form>
+
+    <h2>Student Registration Form</h2>
+
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" placeholder="Enter full name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter password" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required>
+
+    <label for="course">Select Course</label>
+
+    <select id="course">
+      <option>-- Select Course --</option>
+      <option>BCA</option>
+      <option>BBA</option>
+      <option>B.Tech</option>
+      <option>MCA</option>
+      <option>MBA</option>
+    </select>
+
+    <label>Gender</label>
+
+    <input type="radio" name="gender" class="gender"> Male
+    <input type="radio" name="gender" class="gender"> Female
+    <input type="radio" name="gender" class="gender"> Other
+
+    <label for="address">Address</label>
+
+    <textarea 
+      id="address" 
+      rows="4" 
+      placeholder="Enter your address">
+    </textarea>
+
+    <button type="submit">Register</button>
+
+  </form>
+
+</body>
+</html>
