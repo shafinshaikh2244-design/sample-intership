@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  position: relative;
+  box-shadow: 0 0 25px rgba(24, 35, 49, 0.5);
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  top: 40px;
+  left: 40px;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #0072ff;
+  border-radius: 50%;
+  top: 60px;
+  left: 60px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="logo"></div>
+
+</body>
+</html>
