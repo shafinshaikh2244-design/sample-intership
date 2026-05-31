@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses - JSPM University</title>
+<title>Admissions - JSPM University</title>
 
 <style>
 *{
@@ -18,7 +18,7 @@ body{
 }
 
 header{
-    background:#003366;
+    background:maroon;
     color:white;
     text-align:center;
     padding:30px;
@@ -30,31 +30,46 @@ header{
     padding:40px 0;
 }
 
-h2{
-    text-align:center;
-    color:#003366;
-    margin-bottom:30px;
-}
-
-.course-card{
+.section{
     background:white;
-    padding:20px;
-    margin:20px 0;
+    padding:25px;
+    margin-bottom:20px;
     border-radius:10px;
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-.course-card h3{
-    color:#00509e;
-    margin-bottom:10px;
+.section h2{
+    color:maroon;
+    margin-bottom:15px;
 }
 
-.course-card p{
-    color:#555;
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, select, textarea{
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:maroon;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:maroon;
 }
 
 footer{
-    background:#003366;
+    background: maroon;
     color:white;
     text-align:center;
     padding:15px;
@@ -62,56 +77,67 @@ footer{
 }
 </style>
 </head>
-
 <body>
 
 <header>
     <h1>JSPM University</h1>
-    <p>Courses Offered</p>
+    <p>Admission Portal 2026</p>
 </header>
 
 <div class="container">
 
-    <h2>Our Programs</h2>
-
-    <div class="course-card">
-        <h3>B.Tech Computer Engineering</h3>
-        <p>Learn programming, AI, software development, cybersecurity, and cloud computing.</p>
+    <div class="section">
+        <h2>Admission Process</h2>
+        <p>
+            Fill out the application form below. Our admission team
+            will review your details and contact you regarding the next steps.
+        </p>
     </div>
 
-    <div class="course-card">
-        <h3>B.Tech Artificial Intelligence & Data Science</h3>
-        <p>Focus on AI, Machine Learning, Data Analytics, and Intelligent Systems.</p>
+    <div class="section">
+        <h2>Apply Now</h2>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Mobile Number" required>
+
+            <select required>
+                <option value="">Select Course</option>
+                <option>B.Tech Computer Engineering</option>
+                <option>B.Tech AI & Data Science</option>
+                <option>B.Tech Information Technology</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Pharm</option>
+                <option>MBA</option>
+                <option>M.Tech</option>
+            </select>
+
+            <textarea rows="5" placeholder="Additional Information"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
     </div>
 
-    <div class="course-card">
-        <h3>B.Tech Information Technology</h3>
-        <p>Study web development, networking, databases, and information systems.</p>
+    <div class="section">
+        <h2>Required Documents</h2>
+        <ul>
+            <li>10th Marksheet</li>
+            <li>12th Marksheet</li>
+            <li>Passport Size Photograph</li>
+            <li>Aadhar Card</li>
+            <li>Transfer Certificate (TC)</li>
+        </ul>
     </div>
 
-    <div class="course-card">
-        <h3>BBA (Bachelor of Business Administration)</h3>
-        <p>Develop management, leadership, and entrepreneurship skills.</p>
-    </div>
-
-    <div class="course-card">
-        <h3>BCA (Bachelor of Computer Applications)</h3>
-        <p>Build strong foundations in computer applications and software development.</p>
-    </div>
-
-    <div class="course-card">
-        <h3>B.Pharm (Bachelor of Pharmacy)</h3>
-        <p>Study pharmaceutical sciences, medicine formulation, and healthcare.</p>
-    </div>
-
-    <div class="course-card">
-        <h3>MBA (Master of Business Administration)</h3>
-        <p>Advanced management education with industry-oriented training.</p>
-    </div>
-
-    <div class="course-card">
-        <h3>M.Tech Programs</h3>
-        <p>Specialized postgraduate engineering courses in various disciplines.</p>
+    <div class="section">
+        <h2>Contact Admissions Office</h2>
+        <p>📞 +91 9067282222</p>
+        <p>📧 admissions@jspmuni.edu.in</p>
+        <p>📍 Wagholi, Pune, Maharashtra</p>
     </div>
 
 </div>
